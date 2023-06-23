@@ -1,0 +1,125 @@
+To check the git installed or not?
+git --version
+
+to set the user name 
+git config --global user.name "Your Name"
+
+to set the user email
+git config --global user.email "Your Main"
+
+to check whether they set or not use
+git config --global user.name 
+git config --global user.email
+
+to check the all details at the same time and edit it use
+git config --global --edit
+
+to create a folder/directory use
+mkdir myfolder
+
+to access the folder use change directory command
+cd myfolder
+
+to make the folder a repostary in github use 
+git init
+
+
+to check the status of folder
+git status
+
+to add the file to the folder 
+git add Lets.java
+
+
+to check the status of the file that just include
+git status
+
+
+to commit a message use
+git commit -m "Your Message"
+
+
+to check the log use 
+git log
+
+
+to delete the changes just copy the path or hash code of commit and use
+git checkout 8dc66329ea93b3133066b8dc1e47dd6a7190a0b9
+
+to go back to the previous step or master or to move to different branch use
+git checkout master
+
+
+to check the branch use
+git branch
+
+
+to create a branch use
+git branch <branchname>
+
+
+to create and checkout branch at the same time
+git checkout -b varun/plus
+
+
+to merge the one branch to another branch use
+git checkout dev  :this is the branch you wanted to go
+
+git merge varun/plus
+the above step will merge varun/plus branch in dev branch
+
+to hide  or stop the sensetive file to go on git use
+first create a .gitignore file in same repo
+the  add the file you wanna hide inside the .gitignore
+
+
+
+--------Push To remote repo---------------
+to push the branch to the remote branch
+git remote -v origin  https://github.com/VarunSingh19/Git-Learning.git (the repo loc)
+
+git branch  -M master (means we are pushing to master branch of remote repo)
+
+git push -u origin master (to push the brach to the remote repo )
+
+
+
+here first create another file name as plus.java
+now add this file
+git add plus.java
+now commit this..
+git commit -m "this file is added and created successfully"
+use git push command to push the file to the master branch,
+git push
+
+
+
+
+to push other branches use
+git checkout dev (lets move to dev first)
+
+now push this to remote repo
+
+git push -u origin dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
