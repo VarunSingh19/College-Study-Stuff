@@ -137,8 +137,10 @@ def lists():
     print(thislist3)
 
 # The pop() method removes the element at the given position.
+# By default it'll remove the elements from last position of list.
     thislist4 = ["apple", "banana", "cherry"]
     thislist4.pop()
+    thislist4.pop(1)
     print(thislist4)
 
 # The clear() method empties the list.
