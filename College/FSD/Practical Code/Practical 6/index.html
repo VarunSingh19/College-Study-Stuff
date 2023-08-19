@@ -6,7 +6,7 @@
     <title>Translate Application</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
-<body ng-controller="translateController">
+<body ng-controller="translationController">
     <h1>Translate Application</h1>
     <select ng-model="selectedLanguage">
         <option ng-repeat="language in languages" value="{{language.code}}">{{language.name}}</option>
@@ -20,8 +20,8 @@
 </body>
 
 <script>
-    angualar.module('translationApp',[])
-    .controller('translationController',function($scope){
+    angular.module('translateApp', []) // Corrected spelling here
+    .controller('translationController', function($scope) {
         $scope.languages = [
             { name: 'English', code: 'en'},
             { name: 'Tamil', code: 'tm'},
